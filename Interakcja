@@ -1,11 +1,10 @@
 
 public class Interakcja {
-	
 	public static void main(String[] args) {
-	}
+	
 	String imie = "Dominik";
 	String nazwisko = "Podlipniak";
-	String nick = imie + nazwisko;
+	String nick = imie.substring(0,3) + nazwisko;
 	System.out.print(nick);
 }
 }
