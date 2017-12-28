@@ -1,0 +1,25 @@
+import java.util.Random;
+
+class NameGenerator {
+    public static void main(String args[]) {
+
+        Random rnd = new Random(); 
+
+        String firstname = "Dominik"; 
+        String lastname = "Podlipniak";
+
+        String result; 
+
+        result = Character.toString(firstname.charAt(0)); 
+
+        if (lastname.length() > 10)
+            result += lastname.substring(0,10);
+        else
+            result += lastname; 
+        result += Integer.toString(rnd.nextInt(999));
+
+
+        System.out.println(result);
+
+    }
+}
